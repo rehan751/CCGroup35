@@ -5,4 +5,4 @@ COPY package.json /usr/src/server/
 RUN npm install
 COPY . /usr/src/server
 EXPOSE 3000
-CMD [ "node", “server.js"]
+CMD [ "node", "server.js"]
