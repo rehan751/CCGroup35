@@ -142,12 +142,7 @@ app.delete('/api/books/:id', (req, res) => {
 // TODO:  Add API end point /api/exercise2
 
 app.get('/api/exercise2', (req, res) => {
-  res.json({
-    message: 'group 35 application deployed using docker',
-    documentationUrl: '', 
-    baseUrl: '', 
-	endpoints: []
-  })
+  res.send("group 35 application deployed using docker")
 });
 /**********
  * SERVER *
