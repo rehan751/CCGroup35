@@ -8,5 +8,30 @@ module.exports = function (options) {
 
 
     //To DO: add the pattern functions and describe the logic inside the function
+    function productURL(args, respond){
+    	if(args.productId){
+    		for(i=0; i < mockData.length; i++){
+    			if(args.productId == mockData[i].product_id){
+    				respond(null, { result: mockData[i].product_url} );
+    			}
+    		}
+    	}
+    	else{
+    		respond(null, {result: ''});
+    	}
+    }
+    
 
+    function productName(args, respond){
+    	if(args.productId){
+    		for(i=0; i < mockData.length; i++){
+    			if(args.productId == mockData[i].product_id){
+    				respond(null, { result: mockData[i].product_name} );
+    			}
+    		}
+    	}
+    	else{
+    		respond(null, {result: ''});
+    	}
+    }
 }
