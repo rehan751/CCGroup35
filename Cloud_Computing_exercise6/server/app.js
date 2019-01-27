@@ -42,6 +42,11 @@ router.use(function(req, res, next) {
 router.get('/', function(req, res) {
     res.json({ message: 'Welcome to Cloud Computing Exercises API!'});
 });
+
+router.get('/exercise6', function(req, res) {
+    res.json({ message: 'group 35 application deployed using kubernetes'});
+});
+
 /**
  * Exercise 3:
  */
